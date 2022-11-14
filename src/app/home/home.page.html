@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Cards
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,45 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Cards</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<!-- ADOBO -->
+  <ion-card routerLink="/recipe/1">
+    <img alt="Adobo" src="assets/img/adobo.jpg" />
+    <ion-card-header>
+      <ion-card-title>Adobo</ion-card-title>
+      <ion-card-subtitle>Filipino Food</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Chicken adobo is a classic Filipino dish that's as savory as it is bright with acid, and it goes perfectly with a large platter of garlic fried rice.
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Caldereta -->
+  <ion-card routerLink="/recipe/2">
+    <img alt="Caldereta" src="assets/img/caldereta.jpg" />
+    <ion-card-header>
+      <ion-card-title>Caldereta</ion-card-title>
+      <ion-card-subtitle>Filipino Food</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Chicken adobo is a classic Filipino dish that's as savory as it is bright with acid, and it goes perfectly with a large platter of garlic fried rice.
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Caldereta -->
+  <ion-card routerLink="/recipe/3">
+    <img alt="Caldereta" src="assets/img/sinigang.jpg" />
+    <ion-card-header>
+      <ion-card-title>Sinigang</ion-card-title>
+      <ion-card-subtitle>Filipino Food</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Chicken adobo is a classic Filipino dish that's as savory as it is bright with acid, and it goes perfectly with a large platter of garlic fried rice.
+    </ion-card-content>
+  </ion-card>
+    
+
 </ion-content>
