@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="/"
+          [text]="buttonText"
+          [icon]="buttonIcon">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Employees</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let row of Employees; let i=index">
+    <ion-card routerLink="/employee-details/{{ row.id }}" style="align-items: center;">
+      <img alt="asd" src="assets/img/{{ row.id }}.jpg" width="200" height="200" />
+      <ion-card-header>
+        <ion-card-title>{{ row.name }}</ion-card-title>
+        <ion-card-subtitle></ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+       
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <!-- <table>
+    <thead>
+      <th></th>
+      <th>Name</th>
+      <th>Username</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of Employees">
+        <td><img alt="asd" src="assets/img/{{ row.id }}.jpg" width="30" height="30" /></td>
+        <td>{{row.name}}</td>
+        <td>{{row.username}}</td>
+      </tr>
+    </tbody>
+  </table> -->
+</ion-content>

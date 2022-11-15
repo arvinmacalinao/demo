@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { now } from '@ionic/core/dist/types/utils/helpers';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +10,19 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   food = "Virtual Food";
-
   
+  actionName = "Click Me!";
+  isTrue = true;
+  time = new Date();
 
-  constructor() {}
+  constructor() {
 
+
+
+  }
+  click(){
+    this.isTrue = !this.isTrue;
+  }
+  
   
 }

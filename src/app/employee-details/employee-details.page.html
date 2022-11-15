@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>employee_details</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-card style="align-items: center;">
+      <img alt="asd" src="assets/img/{{ id }}.jpg" />
+      <ion-card-header>
+        <ion-card-title>{{ name }}</ion-card-title>
+        <ion-card-subtitle></ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        {{ email }} <br>
+        {{ username }} <br>
+        {{ phone }}
+      </ion-card-content>
+    </ion-card>
+</ion-content>
