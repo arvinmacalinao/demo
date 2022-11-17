@@ -12,7 +12,10 @@
       </ion-item>
       <ion-item href="#">
         <ion-label>Filipino Food</ion-label>
-      </ion-item>            
+      </ion-item>   
+      <ion-item href="/films">
+        <ion-label>Films</ion-label>
+      </ion-item>          
     </div>
   </ion-content>
 </ion-menu>
@@ -24,51 +27,51 @@
       </ion-buttons>
       <ion-title>My App</ion-title>
     </ion-toolbar>
-</ion-header>
+  </ion-header>
 
-<ion-content [fullscreen]="true">
+  <ion-content>
+    <ion-card routerLink="/recipe/1">
+      <img alt="Adobo" src="assets/img/adobo.jpg" />
+      <ion-card-header>
+        <ion-card-title>Adobo</ion-card-title>
+        <ion-card-subtitle>Filipino Food</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        Chicken adobo is a classic Filipino dish that's as savory as it is bright with acid, and it goes perfectly with a large platter of garlic fried rice.
+      </ion-card-content>
+    </ion-card>
+  
+  
+    <ion-card routerLink="/recipe/2">
+      <img alt="Caldereta" src="assets/img/caldereta.jpg" />
+      <ion-card-header>
+        <ion-card-title>Caldereta</ion-card-title>
+        <ion-card-subtitle>Filipino Food</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        Chicken adobo is a classic Filipino dish that's as savory as it is bright with acid, and it goes perfectly with a large platter of garlic fried rice.
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card routerLink="/recipe/3 ">
+      <img alt="Caldereta" src="assets/img/sinigang.jpg" />
+      <ion-card-header>
+        <ion-card-title>Sinigang</ion-card-title>
+        <ion-card-subtitle>Filipino Food</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        Chicken adobo is a classic Filipino dish that's as savory as it is bright with acid, and it goes perfectly with a large platter of garlic fried rice.
+      </ion-card-content>
+    </ion-card>
+      
+    <ion-fab style="padding-right: 50px; padding-bottom: 20px;" class="add-botton" slot="fixed" horizontal="end" vertical="bottom">
+      <ion-fab-button color="primary">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab> 
+  </ion-content>
+  
 
-  <ion-card routerLink="/recipe/1">
-    <img alt="Adobo" src="assets/img/adobo.jpg" />
-    <ion-card-header>
-      <ion-card-title>Adobo</ion-card-title>
-      <ion-card-subtitle>Filipino Food</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
-      Chicken adobo is a classic Filipino dish that's as savory as it is bright with acid, and it goes perfectly with a large platter of garlic fried rice.
-    </ion-card-content>
-  </ion-card>
-
-
-  <ion-card routerLink="/recipe/2">
-    <img alt="Caldereta" src="assets/img/caldereta.jpg" />
-    <ion-card-header>
-      <ion-card-title>Caldereta</ion-card-title>
-      <ion-card-subtitle>Filipino Food</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
-      Chicken adobo is a classic Filipino dish that's as savory as it is bright with acid, and it goes perfectly with a large platter of garlic fried rice.
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card routerLink="/recipe/3 ">
-    <img alt="Caldereta" src="assets/img/sinigang.jpg" />
-    <ion-card-header>
-      <ion-card-title>Sinigang</ion-card-title>
-      <ion-card-subtitle>Filipino Food</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
-      Chicken adobo is a classic Filipino dish that's as savory as it is bright with acid, and it goes perfectly with a large platter of garlic fried rice.
-    </ion-card-content>
-  </ion-card>
-    
-  <ion-fab style="padding-right: 50px; padding-bottom: 20px;" class="add-botton" slot="fixed" horizontal="end" vertical="bottom">
-    <ion-fab-button color="primary">
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  </ion-fab> 
-
-</ion-content>
 
 <ion-footer [translucent]="true">
   <ion-toolbar>

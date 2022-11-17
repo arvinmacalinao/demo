@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="/"
+          [text]="buttonText"
+          [icon]="buttonIcon">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Films</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div *ngFor="let film of films">
+      <ion-card style="align-items: center;">
+        <ion-card-header>
+          <img alt="asd" src="{{ film.image }}" width="" height="" />
+          <ion-card-title>{{ film.title }}</ion-card-title>
+          <ion-card-subtitle>{{ film.director + "" + " (" + film.release_date + ")" }}</ion-card-subtitle>
+          <ion-card-subtitle>{{ 'Score: ' + film.rt_score + '/100'}}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+         <p>{{ film.description }}</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+</ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -24,6 +24,22 @@ const routes: Routes = [
     path: 'employee-details/:id',
     loadChildren: () => import('./employee-details/employee-details.module').then( m => m.EmployeeDetailsPageModule)
   },
+  {
+    path: 'filipino-food',
+    loadChildren: () => import('./filipino-food/filipino-food.module').then( m => m.FilipinoFoodPageModule)
+  },
+  {
+    path: 'films',
+    loadChildren: () => import('./films/films.module').then( m => m.FilmsPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'nba',
+    loadChildren: () => import('./nba/nba.module').then( m => m.NbaPageModule)
+  },
 ];
 
 @NgModule({
